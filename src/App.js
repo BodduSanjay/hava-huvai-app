@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Airport from "./components/Airports";
+import Videos from "./components/Videos";
+import AirportItemDetails from "./components/AirportItemDetails";
+import { AirportsProvider } from "./aiportContext";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <AirportsProvider>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/airport" element={<Airport />} />
+      <Route exact path="/videos" element={<Videos />} />
+      <Route exact path="/airport/:id" element={<AirportItemDetails />} />
+    </Routes>
+  </AirportsProvider>
+);
 
 export default App;

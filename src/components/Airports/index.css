@@ -1,0 +1,76 @@
+.col-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.airport-bg-container {
+  height: 90vh;
+  width: 80vw;
+  padding: 20px;
+}
+
+.heading-btn-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-bottom: 20px;
+}
+
+.heading-airports {
+  font-family: Source Sans Pro;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27.65px;
+  text-align: left;
+}
+
+.add-new-btn {
+  width: 104px;
+  height: 36px;
+  gap: 8px;
+  border-radius: 50px;
+  opacity: 0px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.airport-table {
+  width: 90%;
+}
+
+.airport-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.airport-table th,
+.airport-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.airport-table th {
+  background-color: #f9f9f9;
+}
+
+.airport-table td {
+  vertical-align: middle;
+}
+
+.airport-table th:last-child {
+  border-right: 1px solid #ddd;
+}
+
+.airport-table td:last-child {
+  border-right: 1px solid #ddd;
+}

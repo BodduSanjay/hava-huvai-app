@@ -1,0 +1,35 @@
+.col-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-container {
+  height: 90vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-design {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.button-home {
+  height: 40px;
+  width: 120px;
+  color: white;
+  background-color: rgb(44, 60, 202);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
