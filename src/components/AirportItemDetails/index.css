@@ -335,7 +335,7 @@ input:checked + .slider::before {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #0000001d;
+  background-color: #00000068;
 }
 
 .popup-details-container {
